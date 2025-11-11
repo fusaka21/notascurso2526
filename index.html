@@ -4,12 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notas curso 25-26</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+        table caption{
+            border: 3px solid black;
+            border-bottom: 1.5px;
+            font-size: larger;
+            font-weight: bolder;
+        }
+        table{
+            border: 3px solid black;
+            border-collapse: collapse;
+        }
+        .modulos{
+            background-color: lightgray;
+            text-align: left;
+        }
+        .notas{
+            text-align: center;
+        }
+        .filasuperior{
+            background-color: lightgray;
+        }
+        th, td{
+            border: 1.5px solid black;
+            padding: 5px 10px;
+        }
+        .suspensos{
+            background-color: #ff9999;
+        }
+        .aprobados{
+            background-color: #99ff99;
+        }
+        tfoot{
+            font-weight: bold;
+            text-align: center;
+            border-top: 3px solid black;
+        }
+    </style>
 </head>
 <body>
     <h1>Notas SMX curso 2025/26</h1>
     <table>
+        <caption>Tabla de notas</caption>
         <thead>
-            <tr>
+            <tr class="filasuperior">
+                <th class="modulos">Módulo</th>
                 <th>Nombre</th>
                 <th>1T</th>
                 <th>2T</th>
@@ -20,68 +62,73 @@
         </thead>
         <tbody>
             <tr>
-                <th>M1713</th>
-                <td>Projecte Inter</td>
-                <td>10</td>
-                <td>8</td>
-                <td>9</td>
-                <td>9</td>
-                <td>#</td>
+                <th class="modulos">M1710</th>
+                <td>IPO II</td>
+                <td class="notas">10</td>
+                <td class="notas">10</td>
+                <td class="notas">10</td>
+                <td class="notas aprobados">10</td>
+                <td class="notas">#</td>
             </tr>
             <tr>
-                <th>M0224</th>
+                <th class="modulos">M1713 A</th>
+                <td>Projecte Inter</td>
+                <td class="notas">10</td>
+                <td class="notas">8</td>
+                <td class="notas">9</td>
+                <td class="notas aprobados">9</td>
+                <td class="notas">#</td>
+            </tr>
+            <tr>
+                <th class="modulos">M1713 B</th>
+                <td>Gestió proj</td>
+                <td class="notas">10</td>
+                <td class="notas">6</td>
+                <td class="notas">6</td>
+                <td class="notas aprobados">7</td>
+                <td class="notas">#</td>
+            </tr>
+            <tr>
+                <th class="modulos">M0224</th>
                 <td>Sistemes Op</td>
-                <td>7</td>
-                <td>8</td>
-                <td>8</td>
-                <td>7.5</td>
-                <td>#</td>
+                <td class="notas">7</td>
+                <td class="notas">8</td>
+                <td class="notas">8</td>
+                <td class="notas aprobados">7.5</td>
+                <td class="notas">#</td>
             </tr>
             <tr>
-                <th>M0227</th>
+                <th class="modulos">M0226</th>
+                <td>Seguretat Inf.</td>
+                <td class="notas">7</td>
+                <td class="notas">8</td>
+                <td class="notas">7</td>
+                <td class="notas aprobados">7.5</td>
+                <td class="notas">#</td>
+            </tr>
+            <tr>
+                <th class="modulos">M0227</th>
                 <td>Serv de xarxa</td>
-                <td>4</td>
-                <td>3</td>
-                <td>1</td>
-                <td>2.5</td>
-                <td>5</td>
+                <td class="notas suspensos">4</td>
+                <td class="notas suspensos">3</td>
+                <td class="notas suspensos">1</td>
+                <td class="notas suspensos">2.5</td>
+                <td class="notas aprobados">5</td>
             </tr>
             <tr>
-                <th>M1713</th>
-                <td>Projecte Inter</td>
-                <td>10</td>
-                <td>8</td>
-                <td>9</td>
-                <td>9</td>
-                <td>#</td>
+                <th class="modulos">MPO2</th>
+                <td>Web</td>
+                <td class="notas">10</td>
+                <td class="notas">10</td>
+                <td class="notas">9.5</td>
+                <td class="notas aprobados">9.75</td>
+                <td class="notas">#</td>
             </tr>
-            <tr>
-                <th>M1713</th>
-                <td>Projecte Inter</td>
-                <td>10</td>
-                <td>8</td>
-                <td>9</td>
-                <td>9</td>
-                <td>#</td>
-            </tr>
-            <tr>
-                <th>M1713</th>
-                <td>Projecte Inter</td>
-                <td>10</td>
-                <td>8</td>
-                <td>9</td>
-                <td>9</td>
-                <td>#</td>
-            </tr>
-            <tr>
-                <th>M1713</th>
-                <td>Projecte Inter</td>
-                <td>10</td>
-                <td>8</td>
-                <td>9</td>
-                <td>9</td>
-                <td>#</td>
-            </tr>
+            <tfoot>
+                <tr>
+                    <th colspan="7">David García | @2025</th>
+                </tr>
+            </tfoot>
         </tbody>
         
     </table>
